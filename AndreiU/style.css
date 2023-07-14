@@ -1,0 +1,41 @@
+th,td,table {
+  border: 2px solid red;
+  padding: 7px;
+  margin: 10px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+
+#maria{
+  background-color: orange;
+  border: 3px dashed rgb(255, 0, 255);
+}
+
+#ion{
+  background-color: rgb(9, 140, 255);
+}
+
+#gica{
+  background-color: pink;
+}
+
+#ionescu{
+  background-color: blue;
+  border: 3px dashed rgb(133, 0, 133);
+}
+
+#popescu{
+  background-color: red;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+#hagi{
+  background-color: purple;
+  border: 3px solid rgb(90, 0, 90);
+  color: white
+}
