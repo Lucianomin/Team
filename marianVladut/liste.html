@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            background: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 730px;
+        }
+        h1 {
+            font-size: 100px;
+            color: blue;
+            text-decoration: underline solid;
+        }
+        li {
+            font-size: 50px;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .player {
+            margin: 80px;
+            border: 5px solid blue;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <section>
+      <h1>Lista de fotbalisti</h1>
+      <div>
+        <img class="player" src="ronaldo.jpg" width="400px" alt="">
+        <ol>
+            <li>Cristiano Ronaldo</li>
+            <li>Lionel Messi</li>
+        </ol>
+        <img class="player" src="messi.jpg" width="400px" alt="">
+      </div>
+    </section>
+
+  </body>
+</html>
