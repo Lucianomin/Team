@@ -1,0 +1,42 @@
+div {
+    background-color: red;
+}
+.so {
+    font-size: 20px;
+    background-color: aqua;
+    border: 0px;
+}
+.s1 {
+    border: 1px dashed blue;
+}
+.s2 {
+    border: 3px dashed yellow;
+}
+.s3 {
+    border: 3px dashed cadetblue;
+    background-color: greenyellow;
+}
+.uau {
+    border-style: dotted;
+    border-color:blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fruits {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+    border-left: 5px solid cadetblue;
+}
+.shop{
+    background-color: rgb(173, 127, 127);
+    border-collapse: collapse;
+}
+.books {
+    font-size: 27px;
+    font-family: cursive;
+    color: rgb(33, 95, 61);
+    border-left: 5px solid cadetblue;
+}
+.bookstore {
+    background-color: rgb(173, 127, 127);
+}

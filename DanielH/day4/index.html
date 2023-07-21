@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: red;
+            padding: 20px;
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Votează toppingurile de pizza!</h1>
+
+    <div class="images">
+        <img src="1.jpg" alt="Elefant mâncând pizza 1" width="100px" height="100px">
+        <img src="2.jpg" alt="Elefant mâncând pizza 2" width="100px" height="100px">
+        <img src="3.jpg" alt="Elefant mâncând pizza 3" width="100px" height="100px">
+        <img src="4.jpg" alt="Elefant mâncând pizza 4" width="100px" height="100px">
+    </div>
+
+    <p>Ne-ar plăcea să aflăm preferințele tale cu privire la toppingurile de pizza. Te rugăm să acorzi fiecărui topping o notă de la 1 la 5 stele.</p>
+
+    <form>
+        <fieldset>
+            <legend>Mozzarella</legend>
+            <label>
+                <input type="radio" name="mozzarella" value="1">
+                ★
+            </label>
+            <label>
+                <input type="radio" name="mozzarella" value="2">
+                ★★
+            </label>
+            <label>
+                <input type="radio" name="mozzarella" value="3">
+                ★★★
+            </label>
+            <label>
+                <input type="radio" name="mozzarella" value="4">
+                ★★★★
+            </label>
+            <label>
+                <input type="radio" name="mozzarella" value="5">
+                ★★★★★
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ciuperci</legend>
+            <label>
+                <input type="radio" name="ciuperci" value="1">
+                ★
+            </label>
+            <label>
+                <input type="radio" name="ciuperci" value="2">
+                ★★
+            </label>
+            <label>
+                <input type="radio" name="ciuperci" value="3">
+                ★★★
+            </label>
+            <label>
+                <input type="radio" name="ciuperci" value="4">
+                ★★★★
+            </label>
+            <label>
+                <input type="radio" name="ciuperci" value="5">
+                ★★★★★
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ardei</legend>
+            <label>
+                <input type="radio" name="ardei" value="1">
+                ★
+            </label>
+            <label>
+                <input type="radio" name="ardei" value="2">
+                ★★
+            </label>
+            <label>
+                <input type="radio" name="ardei" value="3">
+                ★★★
+            </label>
+            <label>
+                <input type="radio" name="ardei" value="4">
+                ★★★★
+            </label>
+            <label>
+                <input type="radio" name="ardei" value="5">
+                ★★★★★
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Măsline</legend>
+            <label>
+                <input type="radio" name="masline" value="1">
+                ★
+            </label>
+            <label>
+                <input type="radio" name="masline" value="2">
+                ★★
+            </label>
+            <label>
+                <input type="radio" name="masline" value="3">
+                ★★★
+            </label>
+            <label>
+                <input type="radio" name="masline" value="4">
+                ★★★★
+            </label>
+            <label>
+                <input type="radio" name="masline" value="5">
+                ★★★★★
+            </label>
+        </fieldset>
+
+        <br />
+        <button class="submit" id="submit" name="submit"></button>
+        <input type="submit" value="Trimite">
+    </form>
+
+</body>
+
+</html>
