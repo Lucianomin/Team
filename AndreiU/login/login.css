@@ -1,0 +1,40 @@
+.login{
+  background-color: rgb(255, 253, 213);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 400px;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.submit{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  height: 40px;
+  width: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+select{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.date{
+  font-family:monospace;
+}
