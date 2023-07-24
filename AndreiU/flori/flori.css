@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "myFont2";
+  src: url("../assets/trip-denied-font/TripDeniedPersonalUseRegular-d98q6.ttf");
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("../assets/craglland-font/Craglland-RpZmW.ttf");
+}
+
+.header {
+  width: auto;
+  height: auto;
+  background: linear-gradient(30deg, rgb(87, 0, 0), rgb(190, 0, 0));
+  position: sticky;
+  top: 0;
+  display: flex;
+  position: relative;
+  color: white;
+}
+
+.logo {
+  height: 150px;
+  padding: 30px;
+  padding-top: 20px;
+}
+body {
+  background-color: #fff;
+  margin: 0px;
+}
+
+.sale-div {
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.header h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 70px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.form {
+  background-color: rgb(255, 253, 213);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 900px;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 6px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.number {
+  width: 70px !important;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.form h1 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+h2 {
+  margin-left: 30px;
+}
+
+.form input {
+  width: 300px;
+  margin-left: 30px;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 12px;
+}
+
+.form select {
+  margin-left: 30px;
+  width: 250px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit {
+  padding-left: 0px;
+  margin-left: 0px;
+  height: 50px;
+  width: 800px;
+  border-radius: 14px;
+  margin-top: 50px;
+  background-color: rgb(99, 10, 10);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 40px;
+}
+
+table {
+  margin-left: 30px;
+}
+
+#livrare,
+#serenada {
+  text-align: center;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  padding-left: 0px;
+  margin-left: 0px !important;
+  cursor: pointer;;
+}

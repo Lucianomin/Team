@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florarie</title>
+    <link rel="stylesheet" href="flori.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="../assets/logo1.png" alt="" class="logo" />
+      <div class="sale-div">
+        <h1 class="sale">Petale cazute, preturi crescute!</h1>
+        <p>Nu rata noile oferte EXCLUSIVE de toamna</p>
+      </div>
+    </div>
+    <div class="middle">
+    </div>
+    <div class="form">
+      <form action="form">
+        <h1>Flori Legale</h1>
+        <select name="legal" id="legal">
+          <option>...</option>
+          <option value="Lalele">Lalele</option>
+          <option value="Trandafiri">Trandafiri</option>
+          <option value="Margarete">Margarete</option>
+          <option value="Mangolii">Mangolii</option>
+          <option value="Gladiole">Gladiole</option>
+          <option value="Crini">Crini</option>
+        </select>
+        <h1>Numar</h1>
+        <input type="number" value="0" min="0" class="number" />
+
+        <h1>Flori !Legale</h1>
+        <select name="ilegal" id="ilegal">
+          <option>...</option>
+          <option value="Floare de Colt">Floare de Colt</option>
+          <option value="Piatra Craiului">Piatra Craiului</option>
+          <option value="Bujorul Romanesc">Bujorul Romanesc</option>
+          <option value="Papucul Doamnei">Papucul Doamnei</option>
+          <option value="Nufarul Termal">Nufarul Termal</option>
+        </select>
+        <h1>Numar</h1>
+        <input type="number" min="0" class="number" value="0"/>
+        <h2>Optiuni Aditionale</h2>
+        <table>
+          <tr>
+            <th>Optiune</th>
+            <th>Da/Nu</th>
+          </tr>
+          <tr>
+            <td>Livrare la usa</td>
+            <td class="click">
+              <input type="checkbox" id="livrare" />
+            </td>
+          </tr>
+          <tr>
+            <td>Serenada</td>
+            <td class="click">
+              <input type="checkbox" id="serenada" />
+            </td>
+          </tr>
+        </table>
+        <h1>Nume & Prenume</h1>
+        <input type="text" />
+        <h1>Adresa</h1>
+        <input type="text" />
+        <br />
+        <button class="submit">Comanda</button>
+      </form>
+    </div>
+  </body>
+</html>
