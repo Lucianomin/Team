@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulare Web | Basic Stuff</title>
+    <style>
+      body {
+        background-color: #333333;
+      }
+
+      .login {
+        display: grid;
+        grid-row: 1;
+        justify-content: center;
+        text-align: center;
+        color: #000;
+        
+      }
+
+      button {
+        margin: 25px;
+        border-radius: 5px;
+        border: 1px #000 solid;
+        color: #fff;
+        background-color: #313131;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      input {
+        border-radius: 20px;
+        height: 15px;
+      }
+      form{
+        background-color: aqua;
+        padding: 50px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <form action="contact">
+        <h1>Username :</h1>
+        <input type="text" name="Username" id="Username" />
+        <h1>Email :</h1>
+        <input type="email" name="" id="" />
+        <h1>Password :</h1>
+        <input type="password" name="password" id="password" />
+        <h1>Age :</h1>
+        <input type="number" name="age" id="age" />
+        <h1>Stare Civila :</h1>
+        <select name="stare" id="stare">
+          <option value="Casatorit">Casatorit</option>
+          <option value="Necasatorit">Necasatorit</option>
+          <option value="Divortat">Divortat</option>
+          <option value="Nu spune">Prefer sa nu spun</option>
+        </select>
+        <br />
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+  </body>
+</html>
