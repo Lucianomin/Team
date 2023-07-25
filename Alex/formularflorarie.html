@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florarie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stiluri pentru tabel */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #e8afaf;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #8a89b5;
+        }
+
+        /* Stiluri pentru cadranul imaginii */
+        .cadran-imagine {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #695555;
+            overflow: hidden;
+        }
+
+        .cadran-imagine img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="florarie">
+        <form action="flori">
+            <h1>Preferata voastra floare: </h1>
+            <input type="text" name="text" id="text" />
+            <h1>Aceasta are culoarea: </h1>
+            <select name="Culoarea" id="text">
+                <option value="Albastra">Albastru</option>
+                <option value="Galben">Galben</option>
+                <option value="Rosu">Rosu</option>
+                <option value="Portocaliu">Portocaliu</option>
+                <option value="Violet">Violet</option>
+                <option value="Alba">Alba</option>
+                <option value="Neagra">Neagra</option>
+            </select>
+            <h1>Aceasta cantareste: </h1>
+            <select name="Greutate" id="text">
+                <option value="1kg">1kg</option>
+                <option value="2kg">2kg</option>
+                <option value="0.5kg">0.5kg</option>
+                <option value="mai mult">mai mult</option>
+                <option value="mai putin">mai putin</option>
+            </select>
+            <h1>Cate doresti sa cumperi?: </h1>
+            <input type="number" name="number" id="number" />
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Numele Florii</th>
+                    <th>Imaginea</th>
+                    <th>Pretul Florilor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trandafir</td>
+                    <td class="cadran-imagine"><img src="https://th.bing.com/th/id/OIP.ISDmgvKGNsz5MF6Xj4cXFgHaE7?w=284&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Trandafir"></td>
+                    <td>10 Lei</td>
+                </tr>
+                <tr>
+                    <td>Lalea</td>
+                    <td class="cadran-imagine"><img src="https://th.bing.com/th/id/OIP.axdqi1o5my8QN6jzdxEWUwHaFH?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Lalea"></td>
+                    <td>7 Lei</td>
+                </tr>
+                <tr>
+                    <td>Zambila</td>
+                    <td class="cadran-imagine"><img src="https://th.bing.com/th/id/OIP.e_VFDATlP9BxTud9zS79LAHaEL?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Zambila"></td>
+                    <td>12 Lei</td>
+                </tr>
+                <tr>
+                    <td>Ghiocel</td>
+                    <td class="cadran-imagine"><img src="https://th.bing.com/th/id/OIP.6f8bT9XKXYrtkr_ymMt-UwHaEn?w=294&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Ghiocel"></td>
+                    <td>5 Lei</td>
+                </tr>
+                <!-- Adăugați câte rânduri doriți pentru fiecare floare -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
