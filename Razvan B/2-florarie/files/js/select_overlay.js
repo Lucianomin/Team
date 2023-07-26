@@ -9,13 +9,19 @@ addEventListener("DOMContentLoaded", (event) => {
 
 function change_overlay(c) {
   overlay.style.display = "flex";
+  overlay_prices.style.display = "none";
+  overlay_order.style.display = "none";
+  overlay_contact.style.display = "none";
 
   if(c==1) {
     console.log(overlay_prices);
+    overlay_prices.style.display = "flex";
   }
   if(c==2) {
+    overlay_order.style.display = "flex";
   }
   if(c==3) {
+    overlay_contact.style.display = "flex";
   }
 }
 
