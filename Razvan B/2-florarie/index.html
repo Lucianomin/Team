@@ -1,0 +1,223 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title></title>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="description" content="" />
+
+  <link href="./files/css/index.css" rel="stylesheet" type="text/css">
+
+  <script src="./files/js/select_flowers.js"></script>
+  <script src="./files/js/select_overlay.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="circle-container">
+      <div class="circle"></div>
+    </div>
+    <div class="title-container">
+      <p class="title font_m1">Galactic Blossoms</p>
+      <p class="subtitle font_m1">The Floral Emporium</p>
+    </div>
+    <div class="buttons-container">
+      <div onclick="change_flower(this, 1)" style="left: -0.7vw; margin-top: -20vw;">
+        <p class="text font_m1">Rose</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/rose.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_flower(this, 2)" style="left: -1.7vw; margin-top: -10vw;">
+        <p class="text font_m1">Lily</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/lily.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_flower(this, 3)" style="left: -2.1vw;">
+        <p class="text font_m1">Lotus</p>
+        <svg style="margin-top: -10%">
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/lotus.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_flower(this, 4)" style="left: -1.7vw; margin-bottom: -10vw;">
+        <p class="text font_m1">Tulip</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/tulip.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_flower(this, 5)" style="left: -0.7vw; margin-bottom: -20vw;">
+        <p class="text font_m1">Orchid</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/orchid.png" />
+
+        </svg>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <div onclick="change_overlay(1)" style="right: -1.6vw; margin-top: -12vw;">
+        <p class="text2 font_m1">Prices</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/price.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_overlay(2)" style="right: -2.1vw;">
+        <p class="text2 font_m1">Order</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/order.png" />
+
+        </svg>
+      </div>
+      <div onclick="change_overlay(3)" style="right: -1.6vw; margin-bottom: -12vw;">
+        <p class="text2 font_m1">Contact</p>
+        <svg>
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/contact.png" />
+
+        </svg>
+      </div>
+    </div>
+    <div class="main-container">
+      <div>
+        <svg id="main-svg">
+          <defs>
+            <filter id="colorMask">
+              <feFlood flood-color="var(--accent)" result="flood" />
+              <feColorMatrix result="inv" in="SourceGraphic" type="matrix"
+                values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+              <feComposite in="inv" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+            </filter>
+          </defs>
+
+          <image filter="url(#colorMask)" xlink:href="./files/ico/lotus.png" />
+
+        </svg>
+        <img id="main-image" src="" alt="" style="display: none">
+      </div>
+      <div>
+        <p id="main-price" class="font_m1"></p>
+        <p id="main-availability" class="font_m1"></p>
+      </div>
+      <div>
+        <p id="main-name" class="font_m1">The perfect gift for any occasion!</p>
+      </div>
+    </div>
+    <div class="overlay" style="display: none">
+      <div class="bg"></div>
+      <div class="content">
+        <div onclick="close_overlay()" class="x font_m1">X</div>
+        <div class="overlay-prices" style="display: none">
+          <p class="font_m1">Prices</p>
+          <table class="font_m1">
+            <tr>
+              <th>Flower Name</th>
+              <td>Rose</td>
+              <td>Lily</td>
+              <td>Lotus</td>
+              <td>Tulip</td>
+              <td>Orchid</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>1.5$</td>
+              <td>0.9$</td>
+              <td>2$</td>
+              <td>0.7$</td>
+              <td>1.3$</td>
+            </tr>
+            <tr>
+              <th>Availability</th>
+              <td>In stock</td>
+              <td>In stock</td>
+              <td>In stock</td>
+              <td>Out of stock</td>
+              <td>In stock</td>
+            </tr>
+          </table>
+        </div>
+        <div class="overlay-order" style="display: none"></div>
+        <div class="overlay-contact" style="display: none"></div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
