@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Flamingo</title>
+  <link rel="icon" href="./files/ico/icon.png" />
+  <meta name="description" content="Links in a table" />
+
+  <link href="./files/css/index.css" rel="stylesheet" type="text/css">
+
+  <script src="./files/js/table_contents.js"></script>
+  <script src="./files/js/select_placeholder.js"></script>
+  <script src="./files/js/button_confirm.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="table">
+      <table>
+        <tr>
+          <td><p id="t11"></p></td>
+          <td><p id="t21"></p></td>
+          <td><p id="t31"></p></td>
+        </tr>
+        <tr>
+          <td><p id="t12"></p></td>
+          <td><p id="t22"></p></td>
+          <td><p id="t32"></p></td>
+        </tr>
+        <tr>
+          <td><img id="t13" src="" alt=""></td>
+          <td><img id="t23" src="" alt=""></td>
+          <td><img id="t33" src="" alt=""></td>
+        </tr>
+        <tr>
+          <td><a id="t14" href=""></a></td>
+          <td><a id="t24" href=""></a></td>
+          <td><a id="t34" href=""></a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Nume...">
+        <input type="text" placeholder="Prenume...">
+        <input type="number" min="0" placeholder="Varsta...">
+        <select onchange="select_placeholder(this)">
+          <option value="-" selected hidden>Site preferat...</option>
+          <option value="maimuta">Maimuta</option>
+          <option value="zebra">Zebra</option>
+          <option value="elefant">Elefant</option>
+          <option value="florarie">Florarie</option>
+          <option value="flamingo">Flamingo</option>
+        </select>
+        <select onchange="select_placeholder(this)">
+          <option value="-" selected hidden>Tema preferata...</option>
+          <option value="maimuta">Maimuta</option>
+          <option value="zebra">Zebra</option>
+          <option value="elefant">Elefant</option>
+          <option value="florarie">Florarie</option>
+          <option value="flamingo">Flamingo</option>
+        </select>
+        <input type="button" value="Salveaza" onclick="button_confirm(this)">
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

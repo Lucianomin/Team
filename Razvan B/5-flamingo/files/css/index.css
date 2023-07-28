@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  --bg1: #500b6f;
+  --bg2: #160f31;
+  --accent: #ca00ff;
+  --placeholder: grey;
+  --font_m1: 'Audiowide', monospace !important;
+}
+
+body {
+  overflow: hidden;
+}
+
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.font_s1 {
+  font-family: 'Dela Gothic One', sans-serif !important;
+}
+
+.font_s2 {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.font_s3 {
+  font-family: 'Sofia Sans', sans-serif !important;
+}
+
+.font_c1 {
+  font-family: 'Shantell Sans', cursive !important;
+}
+
+.font_c2 {
+  font-family: 'Pacifico', cursive !important;
+}
+
+.font_c3 {
+  font-family: 'Eagle Lake', cursive !important;
+}
+
+.font_c4 {
+  font-family: 'Dancing Script', cursive !important;
+}
+
+.font_m1 {
+  font-family: 'Audiowide', monospace !important;
+}
+
+.font_m2 {
+  font-family: 'Rajdhani', monospace !important;
+}
+
+.font_shadow {
+  text-shadow: 0px 0px 2vw black;
+}
+
+
+
+
+
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(45deg, var(--bg2) 10%, var(--bg1) 40%, var(--bg1) 60%, var(--bg2) 90%);
+}
+
+
+
+main>.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  height: 100vh;
+}
+
+main>.table>table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+main>.table>table td {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3vw;
+  width: 15vw;
+  margin: 0.5vw;
+
+  border: 0.1vw solid var(--accent);
+  border-radius: 1vw;
+  box-shadow: 0 0 0.5vw 0 var(--accent), inset 0.2vw 0.2vw 0.2vw 0 var(--bg2);
+}
+
+main>.table>table p,
+main>.table>table a {
+  font-family: var(--font_m1);
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: var(--accent);
+  text-shadow: 0.2vw 0.2vw 0.2vw var(--bg2);
+}
+
+main>.table>table td:hover>a {
+  transform: scale(105%);
+  border-bottom: 0.2vw solid var(--accent);
+}
+
+main>.table>table img {
+  width: 90%;
+  margin: 5%;
+  border-radius: 0.6vw;
+}
+
+
+
+main>.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+  height: 100vh;
+}
+
+main>.form>form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+}
+
+main>.form>form input,
+main>.form>form select {
+  width: 100%;
+  margin: 0.3vw 0;
+  padding: 0.5vw;
+
+  font-family: var(--font_m1);
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: var(--accent);
+  text-shadow: 0.2vw 0.2vw 0.2vw var(--bg2);
+
+  background: linear-gradient(45deg, var(--bg2) 10%, var(--bg1) 40%, var(--bg1) 60%, var(--bg2) 90%) no-repeat;
+  background-color: var(--bg2);
+  border: 0.1vw solid var(--accent);
+  border-radius: 1vw;
+  box-shadow: 0 0 0.5vw 0 var(--accent), inset 0.2vw 0.2vw 0.2vw 0 var(--bg2);
+}
+
+main>.form>form input::placeholder {
+  color: var(--placeholder);
+}
+
+main>.form>form select {
+  color: var(--placeholder);
+}
+
+main>.form>form option {
+  background-color: var(--bg2);
+  color: var(--accent);
+}
+
+main>.form>form input[type="button"] {
+  margin-top: 2vw;
+  transition: all 0.5s ease-out;
+}
+
+main>.form>form input[type="button"]:hover {
+  cursor: pointer;
+  transform: scale(102%);
+  background-position-x: -7vw;
+}
