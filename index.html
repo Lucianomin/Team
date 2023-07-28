@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingosul</title>
+</head>
+<style>
+    .login{
+        display: grid;
+      grid-row: 1;
+      justify-content: center;
+      text-align: center;
+      color: black;
+    }
+    table {
+
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 2px dashed black;
+        }
+        img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Nr.Crt</th>
+            <th>Nume</th>
+            <th>Poza</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Zebra</td>
+            <td><img src="zebratab.jpg" alt="zebra"></td>
+            <td><a href="http://127.0.0.1:5500/zebra/index.html">Site-ul Zebrei</td>
+            
+            
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Floare</td>
+            <td><img src="floare1.jpg" alt="floare"></td>
+            <td><a href="http://127.0.0.1:5500/Floare/index.html">Site-ul Florii</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Elefantul</td>
+            <td><img src="https://media.discordapp.net/attachments/1131933272348311653/1131958971939442878/2.jpg?width=337&height=337" alt="Elefantul"></td>
+            <td>Indisponibil</td>
+        </tr>
+    </table>
+      <div class="login">
+        <form action="contact">
+          <h1>Username:</h1>
+          <input type="text" name="Username" id="Usearname" />
+          <h1>Email:</h1>
+          <input type="email" name="email" id="email" />
+          <h1>Age:</h1>
+          <input type="number" name="number" id="number" min="0" />
+          <h1>Stare:</h1>
+          <select name="Site-ul preferat" id="Site-ul preferat">
+            <option value="Zebra">Zebra</option>
+            <option value="Floare">Floare</option>
+            <option value="Elefant">Elefant</option>
+          </select>
+          <br> <br>
+          <select name="Tema preferata" id="Tema preferata">
+            <option value="Maimuta">Maimuta</option>
+            <option value="Zebra">Zebra</option>
+            <option value="Floraria">Floraria</option>
+            <option value="Flamingo">Flamingo</option>
+            <option value="Elefantul">Elefantul</option>
+          </select>
+          <br /><br>
+          <button id="Save">Save</button>
+        </form>
+      </div>
+</body>
+</html>
