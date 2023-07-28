@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulare</title>
+</head>
+<style>
+   input,select,button{
+        border: 1.5px solid rgb(255, 255, 3);
+        border-radius: 15px;
+        background-color: rgb(87, 128, 0);
+    } 
+    h1{
+        text-align: center;
+    }
+    .login{
+        display: grid;
+        grid-row: 1;
+        justify-content: center;
+        text-align: center;
+        color: rgb(160, 1, 252);
+    }
+    body{
+        background-color: rgb(156, 233, 233);
+    }
+    form{
+        background-color: rgb(7, 119, 102);
+        border: 5px solid rgb(223, 209, 238);
+        border-radius: 30px;
+        padding: 20px;
+    }
+</style>
+<center>
+<body>
+    <div claa="login">
+    <form action="contact">
+        <h1>Nume de utilizator</h1>
+        <input type="text" name="username" id="username">
+        <h1>E-mail</h1>
+        <input type="email" name="email" id="username">
+        <h1>Parola</h1>
+        <input type="password" name="password" id="password">
+        <h1>Varsta</h1>
+        <input type="number" name="age" id="age">
+        <h1>Hobby</h1>
+        <select name="hobby" id="hobby">
+            
+            <option value="Citit">Cititul</option>
+            <option value="dansul">Dansul</option>
+            <option value="calatoritul">Calatoritul</option>
+            <option value="Jocuri video">Jocuri video</option>
+            <option value="vizionat filme">Vizionat de filme / seriale</option>
+        </select> 
+        <br>
+        <button id="submit">Submit</button>
+
+    </form>
+    </div>
+</body>
+</center>
+</html>
