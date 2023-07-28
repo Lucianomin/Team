@@ -6,11 +6,15 @@
     <title>Flamingo</title>
     <!-- === CSS Stylesheet === -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- === Favicon Icon === -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   </head>
   <body>
     <header>
       <div class="logo">
-        <img id="logo" src="img/logo.png" width="100px" alt="logo" />
+        <a href="#"
+          ><img id="logo" src="img/logo.png" width="100px" alt="logo"
+        /></a>
       </div>
       <a id="login-link" href="/marianVladut/flamingo/#login"
         ><button>Login</button></a
@@ -34,7 +38,11 @@
             </tr>
             <tr>
               <td>1</td>
-              <td><a href="#" target="_blank">Maimuta</a></td>
+              <td>
+                <a href="/marianVladut/maimuta/tabele.html" target="_blank"
+                  >Maimuta</a
+                >
+              </td>
               <td>Paris</td>
               <td>14 Jul, 2023</td>
               <td><span class="status">Delivered</span></td>
@@ -42,7 +50,11 @@
             </tr>
             <tr style="background: #e6e2f0">
               <td>2</td>
-              <td><a href="#" target="_blank">Zebra</a></td>
+              <td>
+                <a href="/marianVladut/zebra/index.html" target="_blank"
+                  >Zebra</a
+                >
+              </td>
               <td>New York</td>
               <td>19 Jul, 2023</td>
               <td><span class="status">Delivered</span></td>
@@ -50,7 +62,11 @@
             </tr>
             <tr>
               <td>3</td>
-              <td><a href="#" target="_blank">Elefant</a></td>
+              <td>
+                <a href="/marianVladut/elefant/index.html" target="_blank"
+                  >Elefant</a
+                >
+              </td>
               <td>London</td>
               <td>21 Jul, 2023</td>
               <td><span class="status">Delivered</span></td>
@@ -58,7 +74,11 @@
             </tr>
             <tr style="background: #e6e2f0">
               <td>4</td>
-              <td><a href="#" target="_blank">Basic Login</a></td>
+              <td>
+                <a href="/marianVladut/login/index.html" target="_blank"
+                  >Basic Login</a
+                >
+              </td>
               <td>Budapest</td>
               <td>21 Jul, 2023</td>
               <td><span class="status">Delivered</span></td>
@@ -66,7 +86,13 @@
             </tr>
             <tr>
               <td>5</td>
-              <td><a href="#" target="_blank">Petale Parfumate</a></td>
+              <td>
+                <a
+                  href="/marianVladut/Petale Parfumate/index.html"
+                  target="_blank"
+                  >Petale Parfumate</a
+                >
+              </td>
               <td>Bucharest</td>
               <td>27 Jul, 2023</td>
               <td><span class="status">Delivered</span></td>
@@ -74,7 +100,7 @@
             </tr>
             <tr style="background: #e6e2f0">
               <td>6</td>
-              <td><a href="#" target="_blank">Flamingo</a></td>
+              <td><a href="index.html" target="_blank">Flamingo</a></td>
               <td>Madrid</td>
               <td>28 Jul, 2023</td>
               <td><span class="shipped-status">Shipped</span></td>
@@ -82,7 +108,13 @@
             </tr>
             <tr>
               <td>7</td>
-              <td><a href="#" target="_blank">Flamingo Login</a></td>
+              <td>
+                <a
+                  href="/marianVladut/flamingo/index.html#login"
+                  target="_blank"
+                  >Flamingo Login</a
+                >
+              </td>
               <td>New Delhi</td>
               <td>28 Jul, 2023</td>
               <td><span class="pending-status">Pending</span></td>
@@ -92,23 +124,77 @@
         </div>
       </div>
     </main>
-    <section class="login">
-      <div class="formular">
-        <form action="">
+    <a id="login">
+      <section class="login">
+        <div class="formular">
+          <form action="">
             <h1>Login</h1>
-            <input type="text" placeholder="Nume" name="nume" id="nume">
-            <input type="text" placeholder="Prenume" name="prenume" id="prenume">
-            <label for="varsta">Varsta</label>
-            <input type="number" name="varsta" min="1" id="varsta">
+            <input type="text" placeholder="Nume" name="nume" id="nume" />
+            <input
+              type="text"
+              placeholder="Prenume"
+              name="prenume"
+              id="prenume"
+            />
+            <div class="container-varsta">
+              <label style="margin: 20px 0 0 0" for="varsta">Varsta:</label>
+              <input type="number" name="varsta" min="1" id="varsta" />
+            </div>
+            <label style="margin: 20px 0 0 0" for="site-preferat"
+              >Site preferat</label
+            >
             <select name="site-preferat" id="site-preferat">
-                <option value="Maimuta">Maimuta</option>
-                <option value="Zebra">Z</option>
-                <option value="Elefant"></option>
-                <option value="Florarie"></option>
+              <option value="Maimuta">Maimuta</option>
+              <option value="Zebra">Zebra</option>
+              <option value="Elefant">Elefant</option>
+              <option value="Florarie">Florarie</option>
             </select>
-
-        </form>
-      </div>
-    </section>
+            <label style="margin: 20px 0 0 0" for="tema-preferata"
+              >Tema preferata</label
+            >
+            <select name="tema-preferata" id="tema">
+              <option value="Maimuta">Maimuta</option>
+              <option value="Zebra">Zebra</option>
+              <option value="Florarie">Florarie</option>
+            </select>
+            <div class="container-iq">
+              <label style="margin: 20px 0 0 0" for="inteligenta"
+                >Nivel de inteligenta</label
+              >
+              <input
+                type="range"
+                name="inteligenta"
+                min="0"
+                max="1000"
+                step="100"
+                id="inteligenta"
+              />
+              <p
+                style="
+                  margin: 10px 0 0 0;
+                  background: #ff92ba;
+                  color: #fff;
+                  width: fit-content;
+                  border-radius: 10px;
+                  padding: 5px 10px;
+                "
+                id="iq"
+              ></p>
+            </div>
+            <script>
+              const value = document.querySelector("#iq");
+              const input = document.querySelector("#inteligenta");
+              value.textContent = input.value;
+              input.addEventListener("input", (event) => {
+                value.textContent = event.target.value;
+              });
+            </script>
+            <div class="container-button-login">
+              <input id="button-login" type="submit" value="Login" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </a>
   </body>
 </html>
