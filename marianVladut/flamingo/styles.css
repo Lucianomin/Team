@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    background: url('img/background.jpg') no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    cursor: pointer;
+    margin: 20px;
+    padding: 0 0 0 7px;
+    border-radius: 13px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+}
+
+#login-link button {
+    margin: 0 40px 0 0;
+    padding: 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 91px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#login-link button:hover {
+    border: 2px solid #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.orders {
+    border-radius: 13px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 18px );
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.title p {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px 0 20px 20px;
+    color: #fff;
+}
+
+#check {
+    width: 5%;
+    height: 40px;
+    margin: 0 10px 0 0;
+    background: green;
+    border-radius: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    padding: 20px 30px;
+}
+
+th {
+    padding: 10px 30px;
+}
+
+th, td {
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+table tr td a {
+    color: black;
+    text-decoration: none;
+    background: lightcyan;
+    padding: 3px 6px;
+    border-radius: 91px;
+    transition: all 0.2s;
+}
+
+table tr td a:hover {
+    opacity: 0.7;
+}
+
+.tabel{
+    margin: 20px;
+}
+
+.status {
+    background: #8ef6a7;
+    color: #1e8536;
+    padding: 7px 20px;
+    border-radius: 91px;
+}
+
+.shipped-status {
+    background: #73dafd;
+    padding: 7px 24px;
+    border-radius: 91px;
+
+}
+
+.pending-status {
+    background: #ffd37a;
+    padding: 7px 24px;
+    border-radius: 91px;
+}
