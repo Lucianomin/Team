@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulare</title>
+</head>
+<style>
+    input,select,button{
+        border: 1.5px solid rgb(247, 247, 181);
+        border-radius: 15px;
+        background-color: teal;
+    }
+    h1{
+        text-align: center;
+    }
+    .login
+    {
+        display: grid;
+        grid-row: 1;
+        justify-content: center;
+        text-align: center;
+        color: lavender;
+    }
+    body
+    {
+        background-color: rgb(12, 12, 90);
+    }
+    form{
+        background-color: rgb(67, 25, 112);
+        border: 1px solid pink;
+        border-radius: 30px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="login">
+    <form action="contact">
+        <h1>Username:</h1>
+        <input type="text" name="username" id="username">
+        <h1>Email:</h1>
+        <input type="email" name="email" id="username">
+        <h1>Password:</h1>
+        <input type="password" name="password" id="password">
+        <h1>Age:</h1>
+        <input type="number" name="age" min="0" id="age">
+        <h1>Stare civila:</h1>
+        <select name="stare" id="stare">
+            <option value=""casatorit">Casatorit/a</option>
+            <option value=""divortat">Divortat/a</option>
+            <option value=""singur">Singur/a</option>
+            <option value=""nu spune">Prefer sa nu spun</option>
+        </select>
+        <br/> <br/>
+        <button id="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
