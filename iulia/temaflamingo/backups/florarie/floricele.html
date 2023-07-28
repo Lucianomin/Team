@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floraria Sannicolau</title>
+</head>
+<style>
+    
+    form{
+        border: 1px solid pink;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .login
+    {
+        display: grid;
+        grid-row: 1;
+        justify-content: center;
+        text-align: center;
+        color: cyan;
+    }
+    table{
+        color: white;
+        border-collapse: collapse
+    }
+    td,th
+    {
+        border: 3px solid lavender;
+    }
+</style>
+<body style="background-image: url('ibi.jpg');">
+    <div class="login">
+    <form action="contact">
+        <h1>Floarea dorita</h1>
+        <select name="floare" id="floare">
+            <option value="trandafir">Trandafir</option>
+            <option value="crizantema">Crizantema</option>
+            <option value="iris">Iris</option>
+            <option value="lalele">Lalele</option>
+        </select>
+        <h1>Cantitatea de flori</h1>
+        <input type="number" min="0"  name="age" id="age">
+        <!--Pentru a evita utilizarea unei valori negative, e necesar sa adaugi sintagma min="0"-->
+        <h1>Culoarea</h1>
+        <input type="text" name="text" id="text">
+    </form>
+    </div>
+    <h1 style="color: white;">Preturi pentru iubitii nostri clienti</h1>
+    <p style="color: white;">*daca platiti dublu primiti a doua floare gratuit*</p>
+    <table>
+        <tr>
+            <th>Numar Criteriu</th>
+            <th>Numele Florii</th>
+            <th>Pretul Florii</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trandafir Rosu</td>
+            <td>10 lei</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trandafir Alb</td>
+            <td>10,01 lei</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Trandafir Galben</td>
+            <td>9,99 lei</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Iris</td>
+            <td>100 lei</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Lalele din gradina mea</td>
+            <td>fara de pret</td>
+        </tr>
+    </table>
+    <h1>Date de contact</h1>
+    <ul>
+        <li>Numar de telefon: 122</li>
+        <li>Locatie: Strada Dallas, nr 757</li>
+        <li>Mail: inca nu avem</li>
+    </ul>
+    <table style="color: cyan;" align="center">
+        <tr>
+            <th>Zi</th>
+            <th>Interval Orar</th>
+        </tr>
+        <tr>
+            <td>Luni</td>
+            <td>09:00-12:00</td>
+        </tr>
+        <tr>
+            <td>Marti</td>
+            <td>08:00-15:00</td>
+        </tr>
+        <tr>
+            <td>Miercuri</td>
+            <td>09:00-20:00</td>
+        </tr>
+        <tr>
+            <td>Joi</td>
+            <td>09:00-09:01</td>
+        </tr>
+        <tr>
+            <td>Vineri</td>
+            <td>09:00-15:00</td>
+        </tr>
+        <tr>
+            <td>Sambata</td>
+            <td>08:00-14:00</td>
+        </tr>
+        <tr>
+            <td>Duminica</td>
+            <td>Nu ne gasiti</td>
+        </tr>
+    </table>
+</body>
+</html>
