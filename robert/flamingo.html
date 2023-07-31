@@ -20,21 +20,24 @@
     
     form{
         background-color: rgb(169, 245, 248);
-      border: outset;
-      border-radius: 30px;
-      padding: 20px;
+      border: 5px groove;
+      border-radius: 100px;
+      padding: 100px;
       text-align: center; 
         font-family: serif;
     }
     .login{
         display: grid;
         grid-row: 1;
-        justify-content: last baseline;
+        justify-content: right;
         text-align: center;
     }
     input,select,button{
-        border-end-end-radius: 1.5px solid rgb(255, 255, 255);
+        border-radius: 1.5px solid rgb(255, 255, 255);
         background-color: rgb(255, 49, 231);
+    }
+    table{
+        
     }
 </style>
 <body>
@@ -44,18 +47,22 @@
     </header>
     <div class="login">
         <form action="contact">
-            <h3>Nume si prenume</h3>
-            <input type="text" name="nume" id="nume">
-            <h3>Varsta</h3>
-            <input type="number" min="12" name="varsta" id="varsta">
-            <h3>Site preferat</h3>
-            <select style="" name="stare" id="stare">
+            <h2>Nume si prenume<br><input type="text" name="nume" id="nume"></h2>
+            <h2>Varsta<br><input type="number" min="12" name="varsta" id="varsta"></h2>
+            <h2>Site preferat<br>
+            <select style="font-size: 15px;" name="stare" id="stare">
                 <option value="maimuta">&#128284; Maimuta &#128053;</option>
                 <option value="Florarie"> Florarie &#128144;</option>
                 <option value="Zebra">&#128284; Zebra &#129427;</option>
                 <option value="Flamingo"> Flamingo 	&#129449;</option>
                 <option value="toate">Toate sunt super</option>
-            </select>
+            </select></h2>
+            <h2>Teme realizate<br>
+            <center><label for="maimuta">Maimuta</label><input type="checkbox" id="maimuta" name="maimuta"/></center>
+            <center><label for="Florarie">Florarie</label><input type="checkbox" id="Florarie" name="Florarie"/></center>
+            <center><label for="Zebra">Zebra</label><input type="checkbox" id="Zebra" name="Zebra"/></center>
+            <center><label for="Flamingo">Flamingo</label><input type="checkbox" id="Flamingo" name="Flamingo"/></center>
+            </h2>
         </form>
 
     </div>
