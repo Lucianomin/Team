@@ -1,0 +1,152 @@
+
+body{
+    background-color: #231542;
+}
+
+.title{
+    padding-left: 300px;
+    
+}
+
+th{
+    font-size: 35px;
+    border-radius: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+table{
+    margin: 15px;
+    margin-left: 150px;
+    size: 80px;
+    width: 900px;
+    height: 70px;
+    font-family: montserrat;
+    border-radius: 10px;
+    border-collapse: collapse;
+    
+}
+
+.mass{
+    background-color: #fa7b9a;
+
+}
+
+th{
+    color: white;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.imgg{
+    width: 100px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.imgstyle{
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.imgnumber{
+    width: 150px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 10px #fa7b9a;
+}
+
+tr{
+    padding-top: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(175, 88, 168)
+}
+
+button{
+    font-size: x-large;
+    background: none;
+    border: 1px solid pink;
+    font-family: montserrat;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.all{
+    display: flex;
+}
+
+.formular{
+    font-family: montserrat;
+    font-size: x-large;
+    filter: drop-shadow(2px 2px 2px pink);
+    border: #fa7b9a solid 2px;
+    margin-left: 110px;
+    padding-right: 0px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px black
+}
+
+
+input{
+    margin-left: 100px;
+    margin-bottom: 35px;
+    width: 70%;
+    min-height: 30px;
+    font-size: larger;
+    font-family: montserrat;
+    border-radius: 17px;
+    box-shadow: 0 0 10px #fa7b9a;
+
+
+
+}
+
+.formtitle1{
+    padding-left: 160px;
+    color: white;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.formtitle2{
+    padding-left: 260px;
+    color: white;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.formtitle3{
+    padding-left: 190px;
+    color: white;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+select{
+    margin-left: 100px;
+    font-size: 30px;
+    width: 70%;
+    font-family: montserrat;
+    border-radius: 17px;
+    box-shadow: 0 0 10px #fa7b9a;
+
+}
+
+.bot{
+    margin-top: 40px;
+    margin-left: 260px;
+    background-color: pink;
+    border: pink solid 2px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px black;
+}
+
+.linkstyle{
+    color: white;
+
+}
+
+.secret{
+ margin-top: 1000px;
+}
+
+
+
+
