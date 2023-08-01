@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinatie de Vis</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(rgb(155, 155, 255), white);
+    }
+    table {
+      display: grid;
+      grid-row: 1;
+      justify-content: center;
+      text-align: center;
+      border-collapse: collapse;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    td,th,tr{
+        border: 3px dashed black;
+      border-collapse: collapse;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+        border-radius: 15px;
+        background-color: rgb(54, 211, 211);
+    }
+  </style>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <th>Oraș</th>
+          <th>Poză</th>
+          <th>Temperatură Medie</th>
+          <th>Atracții Turistice</th>
+          <th>Locație</th>
+          <th>Checkbox</th>
+        </tr>
+        <tr>
+            <td>Barrow</td>
+            <td><img src="poza2.jpeg"></td>
+            <td>-20°C</td>
+            <td>
+                <ul>
+                    <li>Heritage Center</li>
+                    <li>Tundra Tours</li>
+                    <li>Whale Bone Arch</li>
+                </ul>
+            </td>
+            <td><a href="https://goo.gl/maps/3DB5PSy4nDpWN4Re7">Locație</a></td>
+            </td>
+            <td>
+                <input type="checkbox" id="intf" name="intf" value="intf">
+            </td>
+        </tr>
+        <tr>
+            <td>Prospect Creek</td>
+            <td><img src="poza3.jpeg"></td>
+            <td>-15°C</td>
+            <td>
+                <ul>
+                    <li>Rogue River Gorge</li>
+                    <li>Mill Creek Falls</li>
+                    <li>Pearsony Falls</li>
+                </ul>
+            </td>
+            <td><a href="https://goo.gl/maps/d7ZvJQEQcuwL8abh9">Locație</a></td>
+            </td>
+            <td>
+                <input type="checkbox" id="intf" name="intf" value="intf">
+            </td>
+        </tr>
+        <tr>
+            <td>International Falls</td>
+            <td><img src="poza1.jpeg"></td>
+            <td>-2°C</td>
+            <td>
+                <ul>
+                    <li>Voyageurs National Park</li>
+                    <li>Rainy Lake Bike Trail</li>
+                    <li>Smokey Bear Park</li>
+                </ul>
+            </td>
+            <td><a href="https://goo.gl/maps/u1VfQekPbpmmddQWA">Locație</a></td>
+            </td>
+            <td>
+                <input type="checkbox" id="intf" name="intf" value="intf">
+            </td>
+        </tr>
+        <tr>
+            <td>Umiat</td>
+            <td><img src="poza4.jpeg"></td>
+            <td>-12°C</td>
+            <td>
+                <ul>
+                    <li>Arctic Village</li>
+                    <li>Coldfoot</li>
+                    <li>Wiseman</li>
+                </ul>
+            </td>
+            <td><a href="https://goo.gl/maps/8TR3KGFqDwERiGxVA">Locație</a></td>
+            </td>
+            <td>
+                <input type="checkbox" id="intf" name="intf" value="intf">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6"><button id="submit">Submit</button></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
