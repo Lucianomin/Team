@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <style>
+      body {
+        background-image: url("wnw.jpg");
+        background-repeat: no-repeat;
+        margin: 100px 50px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      h1 {
+        color: black;
+      }
+      table {
+        background-color: cyan;
+        border: 5px dashed;
+        font-size: 16px;
+      }
+
+      .flowers,
+      table,
+      th,
+      td {
+        padding: 5px 10px 5px 10px; /* in this order top right bottom left */
+      }
+      th,
+      td {
+        border: 1px solid midnightblue;
+      }
+      input[type="submit"] {
+        background-color: #fff204;
+        color: rgba(252, 0, 0, 0.877);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      .flowers {
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Flowers.inc</h1>
+    <div class="flowers">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>stock quantity</th>
+          <th>piece price</th>
+        </tr>
+        <tr>
+          <td>genus Tulipa</td>
+          <td>100k</td>
+          <td>1 euro</td>
+        </tr>
+        <tr>
+          <td>genus rosa</td>
+          <td>500k</td>
+          <td>0.50 euro</td>
+        </tr>
+        <tr>
+          <td>genus rhizomatous perennial(bio)</td>
+          <td>50k</td>
+          <td>5 euro</td>
+        </tr>
+        <tr>
+          <td>Syringa</td>
+          <td>10k</td>
+          <td>20 euro</td>
+        </tr>
+        <tr>
+          <td>Lavandula</td>
+          <td>20k</td>
+          <td>30 euro</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <form>
+        <label>Name</label>
+        <input type="name" name="name " placeholder="your name" required />
+        <label>tel:</label>
+        <input
+          type="tel"
+          name="phone numeber"
+          placeholder="write your phone numbe"
+          required
+        />
+        <label>quantity</label
+        ><input
+          type="number"
+          name="quantity"
+          placeholder="please enter product quantity"
+          min="1"
+          required
+        />
+
+        <select>
+          <option>genus Tulipa</option>
+          <option>genus rosa</option>
+          <option>genus rhizomatous perennial(bio)</option>
+          <option>Syringa</option>
+          <option>Lavandula</option>
+        </select>
+        <input type="submit" name="send order" value="send order" />
+      </form>
+    </div>
+    <div name="mycontact">
+      <h5>Contact us!</h5>
+      <p><a>city:</a><a>Timisoara</a></p>
+      <p><a>tel:</a><a>+40 0778 9557 4556</a></p>
+    </div>
+  </body>
+</html>

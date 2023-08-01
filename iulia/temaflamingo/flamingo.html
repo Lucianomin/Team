@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flamingo</title>
+  </head>
+  <style>
+    header {
+      width: auto;
+      height: auto;
+      background: rgb(228, 39, 172);
+      color: rgb(252, 255, 221);
+    }
+    .r {
+      text-align: center;
+      font-family: cursive;
+    }
+    body {
+      background-color: rgb(255, 208, 254);
+    }
+    .b {
+      border: 5px solid black;
+      border-radius: 3px;
+    }
+    .o {
+      font-family: monospace;
+      color: blue;
+    }
+    table,
+    th,
+    tr,
+    td {
+      background-color: rgb(255, 192, 192);
+      border: 3.5px solid purple;
+      border-collapse: collapse;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .e {
+      border: 3.5px dashed gray;
+      border-radius: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .i {
+      display: grid;
+      grid-row: 1;
+      justify-content: center;
+      text-align: center;
+    }
+    input,
+    select,
+    button {
+      border: 1.5px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      background-color: rgb(255, 49, 231);
+      width: 130px;
+      text-align: center;
+      font-family: cursive;
+    }
+    label {
+      border: 1.5px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      background-color: rgb(255, 49, 231);
+      display: inline-block;
+      width: 130px;
+      text-align: center;
+      font-family: cursive;
+    }
+    form {
+      background-color: rgb(169, 245, 248);
+      border: 5px dashed rgb(0, 0, 0);
+      border-radius: 30px;
+      padding: 20px;
+      text-align: center;
+      font-family: cursive;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 class="r">
+        <i><b>Flamingo</b></i>
+      </h1>
+    </header>
+    <center>
+    <div class="b" style="display: inline-block; vertical-align: top">
+      <img src="flamingoibn.jpg" width="100px" />
+    </div>
+    <div style="display: inline-block">
+      <p class="o">
+        Numele <u>flamingo</u> provine din portughezul sau spaniolul
+        <i>flamengo</i> („de culoarea flăcării”). <br /><br />Cuvântul poate să
+        fi fost influențat și de etnonimul spaniol <i>flamenco</i> („flamand”).
+        <br /><br />În limba română <u>„flamingo”</u> provine din germanul
+        <i>flamingo</i>.
+      </p>
+    </div>
+    </center>
+    <br />
+    <br />
+    <br />
+    <div class="i">
+      <form action="contact">
+        <h1>Nume și Prenume:</h1>
+        <input type="text" name="nume" id="nume" />
+        <h1>Vârsta:</h1>
+        <input type="number" min="7" name="varsta" id="varsta" />
+        <h1>Site Preferat:</h1>
+        <select name="stare" id="stare">
+          <option value="maimuta">Maimuta</option>
+          <option value="Florarie">Florarie</option>
+          <option value="Zebra">Zebra</option>
+          <option value="indecis omul">Nu pot alege!</option>
+        </select>
+        <h1>Teme la care am participat</h1>
+        <center><input type="checkbox" id="maimuta" name="maimuta" /></center>
+        <center><label for="maimuta">Maimuta</label></center>
+        <br />
+        <center><input type="checkbox" id="florarie" name="florarie" /></center>
+        <center><label for="florarie">Florarie</label></center>
+        <br />
+        <center><input type="checkbox" id="zebra" name="zebra" /></center>
+        <center><label for="zebra">Zebra</label></center>
+        <br />
+        <br />
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+    <br><br>
+    <table align="center">
+      <tr>
+        <th>Nr.</th>
+        <th>Tema</th>
+        <th>Link</th>
+        <th>Lucruri Noi</th>
+        <th>Feedback</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Maimuta</td>
+        <td><a href="backups/maimuta/tabele.html">Click aici:)</a></td>
+        <td>Liste</td>
+        <td><img class="e" src="like.jpg" width="30px" /></td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Florarie</td>
+        <td><a href="backups/florarie/floricele.html">Click aici:)</a></td>
+        <td>Formulare</td>
+        <td><img class="e" src="like.jpg" width="30px" /></td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Zebra</td>
+        <td><a href="backups/zebra/zebra.html">Click aici:)</a></td>
+        <td>Tabele</td>
+        <td><img class="e" src="like.jpg" width="30px" /></td>
+      </tr>
+    </table>
+  </body>
+</html>

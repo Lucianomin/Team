@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <style>
+    body {
+      background-color: white;
+      border-collapse: collapse;
+      background-image: url(https://th.bing.com/th/id/OIP.LW0_8Qhp3xwexgeY0ankFwHaFN?pid=ImgDet&rs=1)
+    }
+    .login {
+      display: grid;
+      grid-row: 1;
+      justify-content: center;
+      text-align: center;
+      color: red;
+      
+    }
+    text {
+      color: rgb(98, 216, 98);
+    }
+    p{
+        color: darkgreen;
+    }
+  </style>
+
+  <body>
+    <div class="login">
+      <form action="contact">
+        <h1>Username:</h1>
+        <input type="text" name="Username" id="Usearname" />
+        <h1>Email:</h1>
+        <input type="email" name="email" id="email" />
+        <h1>Password:</h1>
+        <input type="password" name="password" id="password" />
+        <h1>Age:</h1>
+        <input type="number" name="number" id="number" />
+        <h1>Stare:</h1>
+        <select name="stare" id="stare">
+          <option value="Casatorit">Casatorit</option>
+          <option value="Celibatar">Celibatar</option>
+        </select>
+        <br />
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

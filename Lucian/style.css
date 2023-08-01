@@ -1,0 +1,12 @@
+table{
+    border: 3px solid rgba(256, 67, 90);
+}
+tr{
+    border: 3px solid #000;
+}
+th,td{
+    border: 3px solid rgba(256, 67, 90);
+}
+img{
+    width:200px;
+}

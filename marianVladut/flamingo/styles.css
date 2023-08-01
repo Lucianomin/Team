@@ -6,10 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body {
+/* body {
     background: url('img/background.jpg') no-repeat fixed;
     background-size: 100% 100%;
-}
+} */
 
 header {
     display: flex;
@@ -33,7 +33,7 @@ header {
     margin: 0 40px 0 0;
     padding: 6px 20px;
     font-size: 18px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     background: rgba( 255, 255, 255, 0.45 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -46,6 +46,7 @@ header {
 #login-link button:hover {
     border: 2px solid #fff;
 }
+
 
 main {
     display: flex;
@@ -74,12 +75,12 @@ main {
     font-size: 25px;
     font-weight: bold;
     padding: 12px 0 20px 20px;
-    color: #fff;
+    color: #000;
 }
 
 #check {
-    width: 5%;
-    height: 40px;
+    width: 4%;
+    height: 35px;
     margin: 0 10px 0 0;
     background: green;
     border-radius: 50%;
@@ -108,9 +109,10 @@ th, td {
 }
 
 table tr td a {
-    color: black;
+    color: #fff;
     text-decoration: none;
-    background: lightcyan;
+    background: #FF92BA;
+    font-size: 20px;
     padding: 3px 6px;
     border-radius: 91px;
     transition: all 0.2s;
@@ -142,4 +144,119 @@ table tr td a:hover {
     background: #ffd37a;
     padding: 7px 24px;
     border-radius: 91px;
+}
+
+/* === Login === */
+
+.formular {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 13px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+form input, form select, input, select, label {
+    display: block;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #FF92BA;
+}
+
+#nume {
+    margin: 25px 0 0 0;
+    border: none;
+    padding: 7px;
+    border-bottom: 2px solid pink;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#prenume {
+    border: none;
+    margin: 15px 0 0 0;
+    padding: 7px;
+    width: 100%;
+    border-bottom: 2px solid pink;
+}
+
+#varsta {
+    border: none;
+    padding: 3px;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    border-bottom: 2px solid pink;
+    margin: 0 0 0 10px;
+}
+
+.container-varsta {
+    display: flex;
+    align-items: baseline;
+}
+
+#site-preferat {
+    background: #ff92ba;
+    color: #fff;
+    border: none;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+#tema {
+    background: #ff92ba;
+    color: #fff;
+    border: none;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.container-iq {
+    display: flex;
+    flex-direction: column;
+}
+
+#inteligenta {
+    margin: 10px 0 0 0;
+}
+
+.container-button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+#button-login {
+    border: none;
+    background: #FF92BA;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
 }
