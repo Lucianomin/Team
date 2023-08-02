@@ -1,0 +1,189 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Escapade la Zero</title>
+  <link rel="icon" href="./files/ico/logo.png" />
+  <meta name="description" content="Calatorii pe tarmuri reci.Alege urmatoarea ta aventura racoroasa!" />
+
+  <link href="./files/css/index.css" rel="stylesheet" type="text/css">
+  <link href="./files/css/scrollbar.css" rel="stylesheet" type="text/css">
+
+  <script src="./files/js/table_contents.js"></script>
+  <script src="./files/js/overlay.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="info">
+      <div class="title">
+        <img src="./files/ico/logo.png" alt="">
+        <div class="text">
+          <p>Escapade la Zero</p>
+          <p>calatorii pe tarmuri reci</p>
+        </div>
+        <div class="links">
+          <a href="mailto:contact@escapade-la-zero.ro">
+            <p>contact<span>@</span>escapade-la-zero.ro</p>
+            <img src="./files/ico/icon_mail.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/escapade_la_zero">
+            <p><span>@</span>escapade_la_zero</p>
+            <img src="./files/ico/icon_ig.png" alt="">
+          </a>
+          <a href="https://www.facebook.com/escapade_la_zero">
+            <p>Escapade la Zero</p>
+            <img src="./files/ico/icon_fb.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="desc">
+        <div class="text">
+          <p>&nbsp; Misiunea noastra este dedicata călătoriilor în cele mai reci orașe de pe malurile marilor sau
+            oceanelor, asa ca pregătește-te să te îndrăgostești de peisajele idilice, în care frumusețea ghețarilor și
+            atmosfera unică se întâlnesc cu ospitalitatea localnicilor.</p>
+          <p>&nbsp; Vei avea ocazia să explorezi orașe și regiuni spectaculoase, îmbinând aventura și relaxarea într-o
+            călătorie desprinsă din basmele de iarnă. Indiferent dacă îți dorești sa admiri aurora boreală într-o noapte
+            magică sau să faci plimbări romantice pe malul mării, noi îți garantam o experienta de neuitat.</p>
+          <p>&nbsp;Aventura te așteaptă, îmbrățișează cu bucurie "zero grade" și descoperă destinatia ta perfectă!</p>
+        </div>
+        <div class="img">
+          <img src="./files/img/gheata.png" alt="">
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <img src="./files/ico/map.png" alt="">
+          <p>Planifica-ti urmatoarea vacanta de vis intr-o zona racoroasa. Descopera ce destinatii speciale am pregatit
+            pentru tine anul acesta!</p>
+        </div>
+        <div>
+          <img src="./files/ico/plane.png" alt="">
+          <p>Bucura-te de vacanta visurilor tale la cele mai bune preturi in locatiile selectate de noi. Ai reduceri
+            atat la cazare cat si la transport!</p>
+        </div>
+        <div>
+          <img src="./files/ico/people.png" alt="">
+          <p>Calatoreste cu un grup pentru avantaje atractive: reduceri in functie de numarul de persoane, activitati de
+            grup si excursii speciale!</p>
+        </div>
+      </div>
+      <div class="random" onclick="overlay(random(1, data.length - 1))">
+        <img src="./files/ico/map.png" alt="">
+        <p>Vrei o aventura neasteptata? Click aici pentru o destinatie la intamplare!</p>
+      </div>
+    </div>
+    <form>
+      <table>
+        <tr>
+          <th style="border-radius: 1.5vw 0 0 0">Crt</th>
+          <th>Oras</th>
+          <th>Imagine</th>
+          <th>Temperatura medie</th>
+          <th>Atractii</th>
+          <th>Locatie</th>
+          <th style="border-radius: 0 1.5vw 0 0">Alege Destinatia</th>
+        </tr>
+        <tr>
+          <td id="t11"></td>
+          <td id="t12"></td>
+          <td id="t13">
+            <div></div><img src="" alt="">
+          </td>
+          <td id="t14"></td>
+          <td id="t15"></td>
+          <td id="t16"><a herf="">Vezi locatie -></a></td>
+          <td id="t17"><input type="radio" name="city" onchange="change_radio()"></td>
+          <td id="ta">
+            <button onclick="change_table(1)" type="button"><img src="./files/ico/arrow.png" alt=""></button>
+            <button onclick="change_table(2)" type="button"><img src="./files/ico/arrow.png" alt=""></button>
+          </td>
+        </tr>
+        <tr>
+          <td id="t21"></td>
+          <td id="t22"></td>
+          <td id="t23">
+            <div></div><img src="" alt="">
+          </td>
+          <td id="t24"></td>
+          <td id="t25"></td>
+          <td id="t26"><a herf="">Vezi locatie -></a></td>
+          <td id="t27"><input type="radio" name="city" onchange="change_radio()"></td>
+        </tr>
+        <tr>
+          <td id="t31"></td>
+          <td id="t32"></td>
+          <td id="t33">
+            <div></div><img src="" alt="">
+          </td>
+          <td id="t34"></td>
+          <td id="t35"></td>
+          <td id="t36"><a herf="">Vezi locatie -></a></td>
+          <td id="t37"><input type="radio" name="city" onchange="change_radio()"></td>
+        </tr>
+        <tr>
+          <td id="tb" style="border-radius: 0 0 1.5vw 1.5vw">
+            <input type="button" value="Confirma destinatia" onclick="submit_table()">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div class="footer">
+      <img src="./files/ico/logo.png" alt="">
+      <div class="text">
+        <p class="title">Escapade la Zero</p>
+        <p class="moto">calatorii pe tarmuri reci</p>
+      </div>
+      <div class="links">
+        <a href="mailto:contact@escapade-la-zero.ro">
+          <p>contact<span>@</span>escapade-la-zero.ro</p>
+          <img src="./files/ico/icon_mail.png" alt=""><br>
+        </a>
+        <a href="https://www.instagram.com/escapade_la_zero">
+          <p><span>@</span>escapade_la_zero</p>
+          <img src="./files/ico/icon_ig.png" alt=""><br>
+        </a>
+        <a href="https://www.facebook.com/escapade_la_zero">
+          <p>Escapade la Zero</p>
+          <img src="./files/ico/icon_fb.png" alt=""><br>
+        </a>
+      </div>
+    </div>
+
+    <div class="overlay" style="display: none">
+      <div class="bg" onclick="close_overlay()"></div>
+      <div class="content">
+        <button class="x" type="button" onclick="close_overlay()">X</button>
+        <div class="location">
+          <div id="l1">
+            <div>
+              <p id="o1"></p>
+              <p id="o2"></p>
+              <p id="o3"><a href="">Vezi locatie -></a></p>
+            </div>
+            <div>
+              <img id="o4" src="" alt="">
+            </div>
+          </div>
+          <div id="l2">
+            <div>
+              <p id="o5"></p>
+            </div>
+            <div>
+              <p>Atractii:</p>
+              <ol id="o6"></ol>
+            </div>
+          </div>
+          <div id="l3">
+            <a id="o7" href="">Descopera preturi</a>
+            <a id="o8" href="">Vezi mai multe atractii</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

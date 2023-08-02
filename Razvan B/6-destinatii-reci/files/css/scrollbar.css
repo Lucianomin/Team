@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+	width: 0.8vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--mid1);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--mid2);
+	border-radius: 100vw;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--bg2);
+  border: 0.1vw solid var(--mid2);
+}
