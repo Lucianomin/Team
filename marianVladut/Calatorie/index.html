@@ -1,90 +1,183 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinatii de calatorie</title>
     <!-- === CSS Styleshet === -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- === Fonts === -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
     <!-- === Google Icons === -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0"
+    />
     <!-- === Favicon Icon === -->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-
-</head>
-<body>
-
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <svg id="cloud1" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(123.901, 128.434, 255, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(190.474, 194.662, 251.656, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M18.8,-21.3C24.9,-17.3,30.7,-11.9,32.2,-5.4C33.7,1.1,30.9,8.7,27.1,16C23.3,23.4,18.5,30.5,11.3,34.5C4.2,38.5,-5.3,39.5,-12.3,36C-19.3,32.4,-23.8,24.4,-28.9,16.3C-34.1,8.2,-40,0.1,-39.8,-8.1C-39.7,-16.3,-33.5,-24.4,-25.9,-28.2C-18.2,-31.9,-9.1,-31.2,-1.4,-29.6C6.4,-27.9,12.7,-25.3,18.8,-21.3Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
-        <h1>Bilete online călătorie</h1>
-        <!-- === Form === -->
-        <form action="bilete.php">
-            <table>
-                <tr>
-                    <th style="padding: 0 85px;">Oraș</th>
-                    <th>Poză</th>
-                    <th style="padding: 0 25px;">° C</th>
-                    <th>Atracții</th>
-                    <th style="padding: 0 20px;">Maps</th>
-                    <th style="padding: 0 30px;">#</th>
-                </tr>
-                <tr>
-                    <td>Tromsø, Norvegia</td>
-                    <td><img src="img/Tromsø.jpg" width="200px" alt="Tromsø"></td>
-                    <td>-1</td>
-                    <td>
-                        <ul>
-                            <li>Aurora Boreală</li>
-                            <li>Catedrala Arctică</li>
-                            <li>Muzeul Polar</li>
-                        </ul>
-                    </td>
-                    <td><a href="https://goo.gl/maps/Tvhj6aQ8noL6W6Kb8"><svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="48"><path d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"/></svg></a></td>
-                    <td><input type="checkbox" name="check" id="check"></td>
-                </tr>
-                <tr>
-                    <td>Reykjavik, Islanda</td>
-                    <td><img src="img/Reykjavik.jpg" width="200px" alt="Reykjavik"></td>
-                    <td>2</td>
-                    <td>
-                        <ul>
-                            <li>Izvoarele geotermale</li>
-                            <li>Catedrala Hallgrímskirkja</li>
-                            <li>Observarea balenelor</li>
-                        </ul>
-                    </td>
-                    <td><a href="https://goo.gl/maps/yG1KLmszzj94p8Dv5"><svg class="material-symbols-outlined" xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="48"><path d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"/></svg></a></td>
-                    <td><input type="checkbox" name="check" id="check"></td>
-                </tr>
-                <tr>
-                    <td>Ushuaia, Argentina</td>
-                    <td><img src="img/Ushuaia.jpg" width="200px" alt="Ushuaia"></td>
-                    <td>5</td>
-                    <td>
-                        <ul>
-                            <li>Parcul Național Tierra del Fuego</li>
-                            <li>Croaziere în Antarctica</li>
-                            <li>Trenul în capătul lumii</li>
-                        </ul>
-                    </td>
-                    <td><a href="https://goo.gl/maps/eDCpdUSNpdMpHhuQ9"><svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="48"><path d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"/></svg></a></td>
-                    <td><input type="checkbox" name="check" id="check"></td>
-                </tr>
-                <tr>
-                    <td colspan="6"><input id="submit" type="submit" value="Comandă"></td>
-                </tr>
-            </table>
-        </form>
-        <svg id="cloud2" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(123.901, 128.434, 255, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(190.474, 194.662, 251.656, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M26.2,-32.6C32.2,-26.2,34.1,-16.3,33.3,-7.8C32.5,0.7,29,7.7,24.7,13.6C20.5,19.6,15.6,24.5,10.1,25.6C4.6,26.6,-1.6,23.9,-7.1,21.2C-12.6,18.4,-17.5,15.7,-22,11.2C-26.4,6.6,-30.3,0.3,-29.5,-5.4C-28.8,-11.2,-23.4,-16.3,-17.7,-22.8C-12,-29.3,-6,-37.1,2,-39.5C10.1,-41.9,20.2,-39,26.2,-32.6Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
-        <!-- === Credits === -->
-        <div class="author">designed by Marian Vladut</div>
+      <svg id="cloud1" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(123.901, 128.434, 255, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(190.474, 194.662, 251.656, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M18.8,-21.3C24.9,-17.3,30.7,-11.9,32.2,-5.4C33.7,1.1,30.9,8.7,27.1,16C23.3,23.4,18.5,30.5,11.3,34.5C4.2,38.5,-5.3,39.5,-12.3,36C-19.3,32.4,-23.8,24.4,-28.9,16.3C-34.1,8.2,-40,0.1,-39.8,-8.1C-39.7,-16.3,-33.5,-24.4,-25.9,-28.2C-18.2,-31.9,-9.1,-31.2,-1.4,-29.6C6.4,-27.9,12.7,-25.3,18.8,-21.3Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+      <h1>Bilete online călătorie</h1>
+      <!-- === Form === -->
+      <form action="bilete.php">
+        <table>
+          <tr>
+            <th style="padding: 0 85px">Oraș</th>
+            <th>Poză</th>
+            <th style="padding: 0 25px">° C</th>
+            <th>Atracții</th>
+            <th style="padding: 0 20px">Maps</th>
+            <th style="padding: 0 30px">#</th>
+          </tr>
+          <tr>
+            <td>Tromsø, Norvegia</td>
+            <td><img src="img/Tromsø.jpg" width="200px" alt="Tromsø" /></td>
+            <td>-1</td>
+            <td>
+              <ul>
+                <li>Aurora Boreală</li>
+                <li>Catedrala Arctică</li>
+                <li>Muzeul Polar</li>
+              </ul>
+            </td>
+            <td>
+              <a href="https://goo.gl/maps/Tvhj6aQ8noL6W6Kb8"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="38"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                >
+                  <path
+                    d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"
+                  /></svg
+              ></a>
+            </td>
+            <td><input type="checkbox" name="check" id="check" /></td>
+          </tr>
+          <tr>
+            <td>Reykjavik, Islanda</td>
+            <td>
+              <img src="img/Reykjavik.jpg" width="200px" alt="Reykjavik" />
+            </td>
+            <td>2</td>
+            <td>
+              <ul>
+                <li>Izvoarele geotermale</li>
+                <li>Catedrala Hallgrímskirkja</li>
+                <li>Observarea balenelor</li>
+              </ul>
+            </td>
+            <td>
+              <a href="https://goo.gl/maps/yG1KLmszzj94p8Dv5"
+                ><svg
+                  class="material-symbols-outlined"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="38"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                >
+                  <path
+                    d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"
+                  /></svg
+              ></a>
+            </td>
+            <td><input type="checkbox" name="check" id="check" /></td>
+          </tr>
+          <tr>
+            <td>Ushuaia, Argentina</td>
+            <td><img src="img/Ushuaia.jpg" width="200px" alt="Ushuaia" /></td>
+            <td>5</td>
+            <td>
+              <ul>
+                <li>Parcul Național Tierra del Fuego</li>
+                <li>Croaziere în Antarctica</li>
+                <li>Trenul în capătul lumii</li>
+              </ul>
+            </td>
+            <td>
+              <a href="https://goo.gl/maps/eDCpdUSNpdMpHhuQ9"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="38"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                >
+                  <path
+                    d="M480.129-488.326q29.828 0 50.806-20.987 20.978-20.988 20.978-50.816 0-29.828-21.037-50.806-21.037-20.978-50.935-20.978-29.898 0-50.756 21.037-20.859 21.037-20.859 50.935 0 29.898 20.987 50.756 20.988 20.859 50.816 20.859ZM480-163.783q131.804-119.565 194.826-215.793 63.022-96.228 63.022-173.141 0-116.53-74.658-190.83-74.658-74.301-183.154-74.301t-183.19 74.301q-74.694 74.3-74.694 190.83 0 76.913 64.522 173.021Q351.196-283.587 480-163.783Zm0 89.761Q316.13-212.696 235.076-330.674q-81.054-117.978-81.054-222.043 0-152.325 98.302-242.913Q350.627-886.218 480-886.218q129.27 0 227.744 90.588 98.474 90.588 98.474 242.913 0 104.065-81.174 222.043Q643.87-212.696 480-74.022ZM480-560Z"
+                  /></svg
+              ></a>
+            </td>
+            <td><input type="checkbox" name="check" id="check" /></td>
+          </tr>
+        </table>
+            <!--Trebuie sa fie button nu doar input iar butonul nu se pune intr-un rand de tabel si nici intr-o casuta a unui tabel, cel putin nu daca formul e in tabel.-->
+        <button id="submit" type="submit" value="Comandă">Submit</button>
+      </form>
+      <svg id="cloud2" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(123.901, 128.434, 255, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(190.474, 194.662, 251.656, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M26.2,-32.6C32.2,-26.2,34.1,-16.3,33.3,-7.8C32.5,0.7,29,7.7,24.7,13.6C20.5,19.6,15.6,24.5,10.1,25.6C4.6,26.6,-1.6,23.9,-7.1,21.2C-12.6,18.4,-17.5,15.7,-22,11.2C-26.4,6.6,-30.3,0.3,-29.5,-5.4C-28.8,-11.2,-23.4,-16.3,-17.7,-22.8C-12,-29.3,-6,-37.1,2,-39.5C10.1,-41.9,20.2,-39,26.2,-32.6Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+      <!-- === Credits === -->
+      <div class="author">Designed by Marian Vladut</div>
     </main>
-
-</body>
+  </body>
 </html>
