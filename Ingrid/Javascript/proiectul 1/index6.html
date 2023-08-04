@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+    
+  
+</head>
+
+    <body>
+
+        <input type="number" id="numar1" min="0" />
+        <br/>
+        <input type="number" id="numar2" min="0" />
+        <br/>
+        <button id="calculeaza">Calculeaza Frate</button>
+        <br/>
+        <p id="rezultat"></p>
+
+        <script>
+
+            function calculeaza()
+            {
+                let a=document.getElementById("numar1").value;
+                let b=document.getElementById("numar2").value;
+
+                let suma=parseInt(a)+parseInt(b);
+                document.getElementById("rezultat").innerHTML=suma
+                setTimeout(() => {
+                    alert(suma);
+                },1000)
+                <!-- setTimeout face pauza ca sa apara prima oara rezultatul apoi page respondul, 1000 ms=1 s-->
+            }
+
+            document.getElementById("calculeaza").addEventListener("click", calculeaza);
+
+        </script>
+
+    </body>
+
+</html>

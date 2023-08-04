@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+    
+  
+</head>
+
+    <body>
+
+        <button id="btn-click">APASA-MA</button>
+
+        <script>
+            
+            function handleClick()
+            {
+                alert("Ai apasat butonul suprem!")
+            }
+
+            function mouseOver()
+            {
+                alert("NU apasa acest buton suprem!");
+            }
+
+            document.getElementById("btn-click").addEventListener("click",handleClick);
+            document.getElementById("btn-click").addEventListener("mouseover",mouseOver);
+
+
+        </script>
+
+    </body>
+
+</html>
