@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 5</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #button {
+            border: none;
+            padding: 10px 20px;
+            background: red;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #eebbbb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="button">Boom</button><br />
+        <h1>...</h1>
+    </div>
+
+    <script>
+
+        function handleClick() {
+            alert("Ai detonat cu succes bomba la Haufe.")
+        }
+
+        document.getElementById("button").addEventListener("click", handleClick)
+
+        let h1Element = document.querySelector('h1');
+        let buttonElement = document.getElementById('button');
+
+        buttonElement.addEventListener('mouseover', function () {
+            h1Element.textContent = 'Apasă pentru a detona bomba la Haufe';
+        });
+
+        buttonElement.addEventListener('mouseout', function () {
+            h1Element.textContent = '...';
+        });
+
+    </script>
+
+</body>
+
+</html>
