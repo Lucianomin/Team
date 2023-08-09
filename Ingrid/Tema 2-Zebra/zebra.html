@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebre</title>
+    <style>
+      h1{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+      }
+      body{
+        background-image: url("zebra.jpg");
+        background-size: 1550px 800px;
+      }
+      table{
+        width: 50%;
+        border-collapse: collapse;
+        color: white;
+        border-spacing: 15px 15px;
+        border: 1px solid;
+      }
+      table,tr,td,th{
+        border: 1px solid;
+      }
+      td{
+        font-family: 'Rajdhani', monospace !important;
+      }
+      h3,p{
+        color: white;
+      }
+      h2{
+        color: white;
+        font-family: 'Ubuntu', sans-serif;;
+      }
+      h4{
+        color: white;
+      }
+      
+    </style>
+  
+</head>
+<body>
+    <script>
+    function toggleText() {
+        var text = document.getElementById("demo");
+        if (text.style.display === "none") {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      }</script>
+    <br>
+    <h1>Zebre 🦓</h1>
+    <table>
+        <tr>
+          <th>Denumire</th>
+          <th>Imagine</th>
+        </tr>
+        <tr>
+         
+          <td>Maneless zebra, Equus quagga borensis – Lönnberg, 1921</td>
+          <td><img src="zebra2.jpg"> </td>
+        </tr>
+        <tr>
+          <td>	Grant's zebra, Equus quagga boehmi – Matschie, 1892</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Equus_quagga.jpg/225px-Equus_quagga.jpg" alt></td>
+        </tr>
+        <tr>
+            <td>Crawshay's zebra, Equus quagga crawshayi – De Winton, 1896</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Zebra_Side.JPG/225px-Zebra_Side.JPG" alt></td>
+        </tr>
+      </table>
+      <br>
+      <h2>Zebrele sunt animale care trăiesc în diferite regiuni din Africa şi sunt inconfundabile, datorită dungilor albe şi negre ce<br> le acoperă corpul.</h2>
+      <h3>Informatii despre zebre</h3>
+           
+<button type='button' onclick="toggleText()">Mancare</button>
+<p id='demo' style='display: none'>Zebrele sunt animale erbivore şi îşi petrec o mare parte din zi mâncând iarbă. Uneori consumă şi diferite crenguțe şi frunze. În perioade de secetă, grupurile de zebre călătoresc pe distanțe mari, spre zone mai bogate în hrană şi apă.</p>
+
+<button type='button' onclick="toggleText()">Durata de viata</button>
+<p id='demo' style='display: none'>Pot trăi până la vârsta de 25 de ani, potrivit National Geographic.</p>
+
+<button type='button' onclick="toggleText()">Puii de zebra</button>
+<p id='demo' style='display: none'>Când se nasc, puii de zebră cântăresc între 25 şi 40 de kg şi pot alerga la o oră după naştere, potrivit San Diego Zoo. În primul an din viață, puiul este alăptat, chiar dacă începe să consume iarbă încă din primele săptămâni de viață.</p>
+
+
+<br><br><br>
+</body>
+</html>
