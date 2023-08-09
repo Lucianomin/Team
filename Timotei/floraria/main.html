@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="s.css" />
+        <title>Floraria</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Flower Shop</h1>
+        </header>
+        <main>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend><strong>Adauga produs:</strong></legend>
+                    <div id="soi">
+                        <label for="floare">Soi floare:
+                        <select name="floare" id="floare" required>
+                            <option value="">Alegeți o floare</option>
+                            <option value="trandafir">Trandafir</option>
+                            <option value="lalea">Lalea</option>
+                            <option value="mac">Mac</option>
+                            <option value="zambila">Zambilă</option>
+                            <option value="floare-de-colt">Floare de colț</option>
+                        </select></label>
+                    </div>
+                    <div id="quant">
+                        <label for="1">Cantitate:
+                        <input type="number" id="1" min="1" max="25" required/></label>
+                    </div>
+                    <div id="color">
+                        <label for="culoare">Culoare:
+                        <select name="culoare" id="culoare" required>
+                            <option value="">Alegeți o culoare</option>
+                            <option value="trandafir">Alb</option>
+                            <option value="lalea">Negru</option>
+                            <option value="mac">Rosu</option>
+                            <option value="zambila">Mov</option>
+                            <option value="floare-de-colt">Roz</option>
+                        </select></label>
+                    </div>
+                    <div id="date">
+                        <label for="data">Data la care le doriti livrate:
+                        <input id=data name="deadline" type="date" /></label>
+                        <p id="obs">*in cazul in care lasati gol, livrarea se va realiza in cel mai scurt timp posibil</p>
+                    </div>
+                    <button id="submit" type="submit">Trimite comanda</button>
+                </fieldset>
+            </form>
+        <div id="tabel">
+            <table id="prices">
+                <tr>
+                    <th>#</th>
+                    <th>Nume floare</th>
+                    <th>Pret /fir</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Trandafir</th>
+                    <th>5 RON</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Lalea</th>
+                    <th>7 RON</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Mac</th>
+                    <th>2 RON</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>Zambila</th>
+                    <th>4 RON</th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th>Floare-de-colt</th>
+                    <th>20 RON</th>
+                </tr>
+            </table>
+        </div>
+        </main>
+        <footer>
+            <h3>Numar de telefon: <i>+40 123 456 789</i> </h3>
+            <h3>Locatie: Timis, Timisoara, Strada Gheorghe Lazar </h3>
+            <h3>Orar: L-S 01:00 - 3:00 </h3>
+        </footer>
+    </body>
+</html>

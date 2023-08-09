@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numar1" min="0" />
+    <br/>
+    <input type="number" id="numar2" min="0" />
+    <br/>
+    <button id="calculeaza"> Calculator digital 100% Original</button>
+    <br/>
+    <p id="rezultat"></p>
+    <script>
+        function calculate(){
+        
+            let a = document.getElementById("numar1").value;
+            let b = document.getElementById("numar2").value;
+
+            let suma = parseInt(a) + parseInt(b);
+            document.getElementById("rezultat").innerHTML = suma
+        }
+    document.getElementById("calculeaza").addEventListener("click", calculate)
+    </script>
+</body>
+</html>
