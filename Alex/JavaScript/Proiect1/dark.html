@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: #fff;
+            color: black;
+            transition: background-color 0.5s, color 0.5s; /* Adăugăm o tranziție lină pentru efectul de trecere */
+        }
+        .dark-mode {
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function toggle() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <h2>Titlu</h2>
+    <button onclick="toggle()">0</button>
+</body>
+</html>
