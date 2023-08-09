@@ -1,0 +1,16 @@
+<input type="number" id="numar1" min="0" />
+<br/>
+<input type="number" id="numar2" min="0" />
+<br/>
+<button id="calculeaza"> Calculator online</button>
+<br/>
+<p id="rezultat"></p>
+<script>
+    function calculate(){
+          let a = document.getElementById("numar1").value;
+        let b = document.getElementById("numar2").value;
+        let suma = parseInt(a) + parseInt(b);
+        document.getElementById("rezultat").innerHTML = suma
+    }
+document.getElementById("calculeaza").addEventListener("click", calculate)
+</script>

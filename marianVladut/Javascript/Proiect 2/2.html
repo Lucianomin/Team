@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV {
+            width: 90%;
+            padding: 50px 0;
+            text-align: center;
+            background: lightblue;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <p>Click "Try it"</p>
+    <button onclick="myFunction1()">Try it</button>
+
+    <div id="myDIV">
+        <p><b>Note :</b> Hidden Div</p>
+    </div>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("myDIV");
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

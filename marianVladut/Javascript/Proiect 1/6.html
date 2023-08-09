@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 6</title>
+    <!-- === CSS Stylesheet === -->
+    <link rel="stylesheet" href="6.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculator Suma</h1>
+        <div class="calc">
+            <input type="number" id="numar1" min="0" />
+            <br />
+            <input type="number" id="numar2" min="0" />
+            <br />
+            <button id="calculeaza">Calculate</button>
+            <br />
+            <div class="rezultat">
+                <p style="display: inline-block; margin: 0;">Rezultat: </p>
+                <p id="rezultat"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            let a = document.getElementById("numar1").value;
+            let b = document.getElementById("numar2").value;
+            let suma = parseInt(a) + parseInt(b);
+            document.getElementById("rezultat").innerHTML = suma
+        }
+        document.getElementById("calculeaza").addEventListener("click", calculate)
+    </script>
+
+</body>
+
+</html>

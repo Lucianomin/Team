@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Bucură-te de Culori Mai Calme: Dark Mode</h2>
+
+    <p>Stai liniștit! <br /> Îți spunem un secret – există o modalitate simplă de a face ochii tăi fericiți. <br /> Poți
+        schimba
+        culorile ecranului tău pentru a fi mai blânde. <br /> În loc de lumina strălucitoare care te face să clipești,
+        poți
+        alege culori întunecate. <br /> Acest mod se numește "Dark Mode". <br /> Este ca atunci când te așezi la umbră
+        într-o zi
+        însorită.</p>
+
+    <button onclick="toggle()">💡 > 👀</button>
+
+    <script>
+        function toggle() {
+            var element = document.body;
+            element.classList.toggle("dark-mode")
+        }
+    </script>
+
+</body>
+
+</html>
